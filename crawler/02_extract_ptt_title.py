@@ -1,7 +1,12 @@
+from pathlib import Path
+
 import requests
 from bs4 import BeautifulSoup
 
 from crawler_utility import extract_article
+
+folder_path = Path("./ptt_joke")
+folder_path.mkdir(parents=True, exist_ok=True)
 
 url = "https://www.ptt.cc/bbs/joke/index.html"
 headers = {
@@ -22,8 +27,13 @@ for title_tag in title_tag_list:
     article_url_str = "https://www.ptt.cc" + title_a_tag["href"]
     # Extract article
     article_str = extract_article(article_url_str)
-    # print(title_tag)
-    print(title_a_tag)
+
+    article_file_path = folder_path / f"{title_str}.txt"
+
+    with article_file_path.open("w") as f:
+        f.write(article_str)
+
+    # print(title_a_tag)
     print("Title:", title_str)
     print("Article URL:", article_url_str)
     print("Article:", article_str)
