@@ -40,7 +40,7 @@ for _ in range(5):
             title_str = title_str.replace(abnormal_str, "_")
         article_file_path = folder_path / f"{title_str}.txt"
 
-        with article_file_path.open("w") as f:
+        with article_file_path.open("w", encoding="utf-8") as f:
             f.write(article_str)
 
         # print(title_a_tag)
