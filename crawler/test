@@ -1,0 +1,2 @@
+set Path=C:\Users\<user_name>\.local\bin;%Path%  (cmd)  
+$env:Path = "C:\Users\<user_name>\.local\bin;$env:Path" (powershell)
