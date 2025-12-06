@@ -3,6 +3,7 @@
 ## Course Notes (docs/)
 - [Tibame 20251109 pyetl morning](docs/Tibame_20251109_pyetl_morning.md)
 - [Tibame 20251109 pyetl afternoon](docs/Tibame_20251109_pyetl_afternoon.md)
+- [Tibame 20251130 pyetl](docs/Tibame_20251130_pyetl.md)
 
 ## tmp_note/note_20251109.md
 ### selector
