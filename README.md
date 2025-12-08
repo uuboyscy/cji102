@@ -1,12 +1,14 @@
 # Tibame CJI102 Notes
 
-## Course Notes (docs/)
+## Lecture Notes
 - [Tibame 20251109 pyetl morning](docs/Tibame_20251109_pyetl_morning.md)
 - [Tibame 20251109 pyetl afternoon](docs/Tibame_20251109_pyetl_afternoon.md)
 - [Tibame 20251130 pyetl](docs/Tibame_20251130_pyetl.md)
+- [Tibame 20251206 pyetl morning](docs/Tibame_20251206_pyetl_morning.md)
 
-## tmp_note/note_20251109.md
-### selector
+## Quick Notes (YYYY/MM/DD)
+### note_20251109.md
+#### selector
 ```
 . -> class
 # -> id
@@ -17,7 +19,7 @@
     -> div.r-list-container.action-bar-margin.bbs-screen
   ```
 
-### Web crawler steps
+#### Web crawler steps
 1. Open `developer tools -> Network` to see what HTTP method to use
 2. See payload to see what data to be attached
    - Query string parameters
