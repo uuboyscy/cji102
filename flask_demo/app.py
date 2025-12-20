@@ -1,5 +1,6 @@
-from flask import Flask, request
+from flask import Flask, render_template, request
 
+import model
 from utils import query
 
 # app = Flask(
@@ -48,6 +49,24 @@ def hello():
     if not username:
         return "What is your name?"
     return f"Hello {username}!"
+
+@app.route("/hello_tmpl")
+def hello_tmpl():
+    username = request.args.get("username")
+    return render_template(
+        "hello.html",
+        username=username,
+    )
+
+@app.route('/show_staff')
+def hello_google():
+    staff_data = model.getStaff()
+    column = ['ID', 'Name', 'DeptId', 'Age', 'Gender', 'Salary']
+    return render_template(
+        'show_staff.html',
+        staff_data=staff_data,
+        column=column,
+    )
 
 
 @app.route("/hello_post", methods=["GET", "POST"])
