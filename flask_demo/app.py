@@ -37,7 +37,28 @@ def emp(dep_id, emp_id):
 @app.route("/hello")
 def hello():
     username = request.args.get("username")
+    if not username:
+        return "What is your name?"
     return f"Hello {username}!"
+
+
+@app.route("/hello_post", methods=["GET", "POST"])
+def hello_post():
+    form_html = """
+    <form method="POST">
+        <label>Username:</label><br>
+        <input type="text" name="username"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    """
+    request_method = request.method
+    if request_method == "POST":
+        username = request.form.get("username")
+        form_html += f"""
+        <h6>Hello {username}!</h6>
+        """
+
+    return form_html
 
 
 if __name__ == "__main__":
