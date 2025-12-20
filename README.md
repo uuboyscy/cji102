@@ -6,6 +6,7 @@
 - [Tibame 20251130 pyetl](docs/Tibame_20251130_pyetl.md)
 - [Tibame 20251206 pyetl morning](docs/Tibame_20251206_pyetl_morning.md)
 - [Tibame 20251206 pyetl afternoon](docs/Tibame_20251206_pyetl_afternoon.md)
+- [Tibame 20251220 flask](https://notebooklm.google.com/notebook/40b108db-7d31-4aa1-9d65-7b80feeeff75)
 
 ## Quick Notes (YYYY/MM/DD)
 ### note_20251109.md
