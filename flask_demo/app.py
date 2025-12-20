@@ -2,7 +2,11 @@ from flask import Flask, request
 
 from utils import query
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    static_url_path="/source",  # default to "/static"
+    static_folder="./static_object",  # default to "./static"
+)
 
 @app.route("/")
 def hello_flask():
