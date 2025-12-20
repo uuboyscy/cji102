@@ -1,0 +1,80 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #34d399; stop-opacity: 1"/>
+      <stop offset="100%" style="stop-color: #059669; stop-opacity: 1"/>
+    </linearGradient>
+    
+    <!-- Code bracket shadow -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGradient)" stroke="#ffffff" stroke-width="8"/>
+  
+  <!-- Main code brackets - now curly braces -->
+  <g>
+    <!-- Left curly brace - using simpler curves -->
+    <path d="M 140 120 C 125 120 120 125 120 140 L 120 170 C 120 175 115 175 110 175 L 105 175 C 105 185 105 215 105 225 L 110 225 C 115 225 120 225 120 230 L 120 260 C 120 275 125 280 140 280" stroke="#ffffff" stroke-width="14" fill="none"/>
+    
+    <!-- Right curly brace - using simpler curves -->
+    <path d="M 260 120 C 275 120 280 125 280 140 L 280 170 C 280 175 285 175 290 175 L 295 175 C 295 185 295 215 295 225 L 290 225 C 285 225 280 225 280 230 L 280 260 C 280 275 275 280 260 280" stroke="#ffffff" stroke-width="14" fill="none"/>
+  </g>
+  
+  <!-- Data flow elements -->
+  <g opacity="0.9">
+    <!-- Data pipes/arrows -->
+    <path d="M 50 200 L 80 200 L 85 195 M 85 205 L 80 200" stroke="#4ade80" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M 315 200 L 345 200 L 350 195 M 350 205 L 345 200" stroke="#4ade80" stroke-width="8" fill="none" stroke-linecap="round"/>
+    
+    <!-- Data nodes -->
+    <circle cx="170" cy="160" r="8" fill="#fbbf24"/>
+    <circle cx="230" cy="160" r="8" fill="#fbbf24"/>
+    <circle cx="170" cy="200" r="8" fill="#fbbf24"/>
+    <circle cx="230" cy="200" r="8" fill="#fbbf24"/>
+    <circle cx="170" cy="240" r="8" fill="#fbbf24"/>
+    <circle cx="230" cy="240" r="8" fill="#fbbf24"/>
+    
+    <!-- Connecting lines -->
+    <path d="M 170 160 L 170 240 L 230 240 L 230 160" stroke="#fbbf24" stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Web/blog symbol -->
+  <g opacity="0.9">
+    <!-- Globe/web icon -->
+    <circle cx="200" cy="100" r="12" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M 188 100 Q 200 90 212 100 Q 200 110 188 100" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M 188 100 Q 200 110 212 100 Q 200 90 188 100" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <line x1="188" y1="100" x2="212" y2="100" stroke="#fff" stroke-width="2"/>
+    
+    <!-- .dev domain indicator -->
+    <circle cx="218" cy="95" r="3" fill="#4ade80"/>
+  </g>
+  
+  <!-- Small decorative elements -->
+  <circle cx="150" cy="130" r="4" fill="#ff6b6b" opacity="0.8"/>
+  <circle cx="250" cy="130" r="4" fill="#4ecdc4" opacity="0.8"/>
+  <circle cx="150" cy="270" r="4" fill="#45b7d1" opacity="0.8"/>
+  <circle cx="250" cy="270" r="4" fill="#96ceb4" opacity="0.8"/>
+  
+  <!-- Subtle tech pattern in background -->
+  <g opacity="0.1">
+    <path d="M 160 340 L 240 340 M 170 350 L 230 350 M 180 360 L 220 360" stroke="#ffffff" stroke-width="2"/>
+    <path d="M 160 60 L 240 60 M 170 50 L 230 50 M 180 40 L 220 40" stroke="#ffffff" stroke-width="2"/>
+  </g>
+  
+  <!-- Brand identity -->
+  <text x="200" y="310" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="900" opacity="0.95">
+    uuboyscy.dev
+  </text>
+  
+  <!-- Small tagline -->
+  <text x="200" y="330" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold" opacity="0.8">
+    DATA • CODE • LEARN
+  </text>
+  <!-- Invisible export box to keep brackets from being clipped -->
+  <rect x="10" y="10" width="380" height="380" fill="none" stroke="none" id="exportBox"/>
+</svg>

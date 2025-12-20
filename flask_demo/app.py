@@ -60,6 +60,12 @@ def hello_post():
 
     return form_html
 
+@app.route("/show_image")
+def show_image():
+    return """
+    <img src="/static/logo_123456.svg">
+    """
+
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5001)
